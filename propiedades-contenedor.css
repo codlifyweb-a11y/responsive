@@ -2,22 +2,29 @@ body {
   background: #0a0a0a;
   font-family: "Poppins", sans-serif;
 }
+
 .title {
   font-size: 24px;
   color: #f5f5f5;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
 }
+
 /* 
 Evitar hacer margin para no tener elementos al final con margenes */
 .caja {
   background: #f5f5f5;
   color: #0a0a0a;
-  padding: 40px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 100%;
   font-size: 24px;
   border: 2px solid #5a5a5a;
   /* margin-right: 48px; */
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contenedor {
@@ -27,13 +34,28 @@ Evitar hacer margin para no tener elementos al final con margenes */
   border: 4px solid #f5f5f5;
   padding: 40px;
   display: flex;
+  /*justify-content: end; */
+  /* justify-content: end; */
+  /* justify-content: end; */
+  /* justify-content: space-between; Usa space-between para pegar el primer y el último elemento a los bordes.*/
+  /* justify-content: space-evenly; Usa space-evenly para repartir exactamente la misma cantidad de espacio en todos los lados.*/
+  /* justify-content: space-around; Deja un margen en los bordes. Este espacio en los extremos mide la mitad del espacio que hay entre cada elemento.*/
+  /* justify-content: stretch; permite que los elementos de tamaño automático ocupen todo el espacio disponible en el contenedor*/
   /* gap: 10px 40px; */
-  gap: 40px;
+  gap: 24px;
   /* gap: 48px; */
-  flex-direction: row;
+  /* flex-direction: row; */
   /* flex-direction: row-reverse; */
   /* flex-direction: column; */
   /* flex-direction: column-reverse; */
   flex-wrap: wrap;
   /* flex-wrap: wrap-reverse; */
+  /* height: 90vh; */
+  /*align-items: stretch; Ocupa todo el alto del contenedor. */
+  /* align-items: start; */
+  /* align-content: space-between; */
+  /* align-content: space-between; Nos permite cambiar el alineado de los elementos cuando estos ocupan multiples lineas
+Por ejemplo cuando tienen flex-warp: wrap
+
+start | center | end I space-between I space-around */
 }
